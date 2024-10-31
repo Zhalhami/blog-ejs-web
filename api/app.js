@@ -11,10 +11,10 @@ const aboutContent = "Hac habitasse platea dictumst vestibulum rhoncus est pelle
 const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rhoncus urna neque viverra justo nec ultrices...";
 
 const app = express();
-
-app.set("view engine", "ejs");
 const path = require("path");
 app.set("views", path.join(__dirname, "views"));
+
+app.set("view engine", "ejs");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
